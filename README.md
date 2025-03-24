@@ -16,14 +16,14 @@ Ce projet est une horloge numérique simple et élégante, développée en HTML,
 ### ✨ Fonctionnalités
 
 Affichage en temps réel de :
+- l'heure  
+- les minutes  
+- les secondes  
 
-  + l'heure
-  + les minutes
-  + les secondes
-    
-+ Format 24 heures
-+ Mise à jour automatique chaque seconde
-+ Interface responsive et design minimaliste
+Autres caractéristiques :
+- Format 24 heures  
+- Mise à jour automatique chaque seconde  
+- Interface responsive et design minimaliste
 
   
 
