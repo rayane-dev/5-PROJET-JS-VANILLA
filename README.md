@@ -8,6 +8,11 @@ Pour cela j'utiliserai les connaissances que j'ai récemment travailler sur [Fre
 
 
 
+
+
+
+
+
 ## 🕒 Horloge Numérique en JavaScript
 
 Ce projet est une horloge numérique simple et élégante, développée en HTML, CSS et JavaScript. L'horloge affiche l'heure actuelle en temps réel, en se mettant automatiquement à jour chaque seconde.
