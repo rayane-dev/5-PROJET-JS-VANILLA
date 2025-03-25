@@ -41,19 +41,20 @@
 
 
 body{
-    padding: 10px;
+    padding: 15px;
     background-color: #fff;
     height: 100vh;
     font-family: 'Satoshi', sans-serif;
+    overflow: hidden;
 }
 
 main{
     /* background-color: aqua; */
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    gap: 260px;
+    gap: 200px;
     height: 100%;
     width: 100%;
     border-radius: 20px;
@@ -61,6 +62,8 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 h1{
@@ -110,6 +113,14 @@ h2{
     gap: 30px;
 }
 
+#container-idea > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 /*CLOCK*/
 
 
@@ -117,7 +128,6 @@ article{
     display: flex;
     align-items: center;
     justify-content: center;
-    
     width: min-content;
     padding: 20px;
     background-color: #191919;
@@ -127,6 +137,16 @@ article{
 .clock {
     border-radius: 50%;
     background: #fff url('https://cssanimation.rocks/images/posts/clocks/ios_clock.svg') no-repeat center;
+    background-size: 88%;
+    height: 12em;
+    padding-bottom: 0;
+    position: relative;
+    width: 12em;
+}
+
+#container-idea > div:nth-of-type(3) .clock {
+    border-radius: 50%;
+    background: #fff url('https://cssanimation.rocks/images/posts/clocks/station_clock.svg') no-repeat center;
     background-size: 88%;
     height: 12em;
     padding-bottom: 0;
@@ -169,6 +189,8 @@ article{
     border-radius: 200% / 30%;
 }
 
+
+
 .minutes {
     background: #000;
     position: absolute;
@@ -190,8 +212,112 @@ article{
     transform-origin: 30% 60%;
     width: 1%;
     border-radius: 200%/10%;
-   
 } 
+
+#container-idea > div:nth-of-type(1) .hours {
+    width: 2.5%;
+    height: 20%;
+    left: 48.75%;
+    top: 30%;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    border-radius: 0%;
+}
+
+#container-idea > div:nth-of-type(1) .minutes {
+    width: 2.5%;
+    height: 40%;
+    left: 49%;
+    top: 10%;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    border-radius: 0%;
+}
+
+#container-idea > div:nth-of-type(1) .seconds {
+    background-color: #000;
+    height: 45%;
+    left: 49.5%;
+    top: 14%;
+    width: 1%;
+    -webkit-transform-origin: 50% 80%;
+    transform-origin: 50% 80%
+}
+
+
+#container-idea > div:nth-of-type(2) .minutes {
+    background: #000;
+    width: 3%;
+    height: 35%;
+    position: absolute;
+    left: 48.65%;
+    top: 18%;
+    -webkit-transform-origin: 50% 78.5%;
+    transform-origin: 50% 78.5%
+}
+
+
+#container-idea > div:nth-of-type(2) .seconds {
+    background: red;
+    width: 1.5%;
+    height: 42%;
+    position: absolute;
+    left: 49.25%;
+    top: 17%;
+    -webkit-transform-origin: 50% 71%;
+    transform-origin: 50% 71%;
+    z-index: 8
+}
+
+#container-idea > div:nth-of-type(3) .hours {
+    background: #000;
+    width: 3.5%;
+    height: 40%;
+    position: absolute;
+    left: 48.25%;
+    top: 22%;
+    -webkit-transform-origin: 50% 71%;
+    transform-origin: 50% 71%;
+    border-radius: 0;
+}
+
+#container-idea > div:nth-of-type(3) .minutes {
+    background: #000;
+    width: 3.5%;
+    height: 55%;
+    position: absolute;
+    left: 48.25%;
+    top: 7%;
+    -webkit-transform-origin: 50% 78.5%;
+    transform-origin: 50% 78.5%;
+    border-radius: 0;
+}
+
+#container-idea > div:nth-of-type(3) .seconds {
+    background: red;
+    width: 1.5%;
+    height: 42%;
+    position: absolute;
+    left: 49.25%;
+    top: 20%;
+    -webkit-transform-origin: 50% 71%;
+    transform-origin: 50% 71%;
+    border-radius: 0;
+    z-index: 8
+}
+
+
+
+#container-idea > div:nth-of-type(3) .seconds::before {
+    background: red;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: -9%;
+    left: -200%;
+    height: 18%;
+    width: 500%
+}
 
 .circle-container{
     position: absolute;
@@ -208,6 +334,10 @@ article{
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+}
+
+#container-idea > div:nth-of-type(1) .circle-container{
+    padding: 4%;
 }
 
 .circle{

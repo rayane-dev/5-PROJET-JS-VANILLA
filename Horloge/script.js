@@ -18,12 +18,12 @@ function mafonction(){
  time[0].innerHTML = now.getHours();
  time[1].innerHTML = now.getMinutes();
 
-if(10 > now.getSeconds() ){
-    time[2].innerHTML = '0' + now.getSeconds();
-}
-else{
-    time[2].innerHTML = now.getSeconds();
-}
+    if(10 > now.getSeconds() ){
+     time[2].innerHTML = '0' + now.getSeconds();
+    }
+    else{
+        time[2].innerHTML = now.getSeconds();
+    }
 
  
 }
@@ -68,57 +68,3 @@ function intializeClock(){
 
 setInterval(intializeClock, 1000);
 
-
-// //NEW YORK
-// function NewYorkClock(){
-//     const nyDateStr = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
-//     const nyDate = new Date(nyDateStr);
-//     console.log(nyDate);
-
-    
-//     hours = nyDate.getHours();
-//     minute = nyDate.getMinutes();
-//     second = nyDate.getSeconds();
-
-//    let hourspointer = document.querySelectorAll('.hours-container');
-//    let minutespointer = document.querySelectorAll('.minutes-container');
-//    let secondspointer = document.querySelectorAll('.seconds-container');
-
-//     //HORRAIRE NEW YORK
-//     hourspointer[1].style.transform = 'rotateZ(' + hours * 30 + 'deg)';
-//     minutespointer[1].style.transform = 'rotateZ(' + minute * 6 + 'deg)';
-//     secondspointer[1].style.transform = 'rotateZ(' + second * 6 + 'deg)'; 
-    
-    
-// }
-
-
-// setInterval(NewYorkClock, 1000);
-
-
-
-// //LONDRE
-// function londonClock(){
-//     const londonDateStr = new Date().toLocaleString('en-BR', { timeZone: 'Europe/London' });
-//     const londonDate = new Date(londonDateStr);
-//     console.log(nyDate);
-
-    
-//     hours = nyDate.getHours();
-//     minute = nyDate.getMinutes();
-//     second = nyDate.getSeconds();
-
-//    let hourspointer = document.querySelectorAll('.hours-container');
-//    let minutespointer = document.querySelectorAll('.minutes-container');
-//    let secondspointer = document.querySelectorAll('.seconds-container');
-
-//     //HORRAIRE NEW YORK
-//     hourspointer[1].style.transform = 'rotateZ(' + hours * 30 + 'deg)';
-//     minutespointer[1].style.transform = 'rotateZ(' + minute * 6 + 'deg)';
-//     secondspointer[1].style.transform = 'rotateZ(' + second * 6 + 'deg)'; 
-    
-    
-// }
-
-
-// setInterval(londonClock(), 1000);

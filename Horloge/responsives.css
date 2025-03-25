@@ -1,4 +1,149 @@
 @media screen and (max-width: 992px) {
+    main{
+        gap: 150px;
+    }
+
+    #container-idea{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 270px;
+        flex-direction: row;
+        /* background-color: rgba(25, 25, 25, 0);
+        backdrop-filter: blur(50px); */
+        border-radius: 10px;
+        padding-right:  20px;
+        padding-left:  20px;
+        gap: 20px;
+    }
+
+    article{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: min-content;
+        padding: 20px;
+        background-color: #191919;
+        border-radius: 30px;
+    }
     
+    .clock {
+        height: 10em;
+        width: 10em;
+    }
+
+    #container-idea > div:nth-of-type(3) .clock {
+        height: 10em;
+        width: 10em;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    article{
+        padding: 15px;
+        background-color: #191919;
+        border-radius: 25px;
+    }
+    
+    .clock {
+        height: 7em;
+        width: 7em;
+    }
+
+    #container-idea > div:nth-of-type(3) .clock {
+        height: 7em;
+        width: 7em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main{
+        gap: 50px;
+    }
+    #container-time{
+        display: flex;
+        gap: 40px;
+    }
+
+    article{
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+    
+    h2{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #container-time p{
+        font-size: 18px;
+    }
+
+    article{
+        padding: 15px;
+        background-color: #191919;
+        border-radius: 25px;
+    }
+
+    .clock {
+        height: 7em;
+        width: 7em;
+    }
+
+    
+
+
+    #container-idea{
+        max-width: 400px;
+        height: min-content;
+        justify-content: top;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    main {
+        gap: 30px;
+    }
+    #container-time{
+        gap: 20px;
+    }
+
+    #container-idea{
+        gap: 15px;
+    }
+
+    article{
+        padding: 15px;
+        background-color: #191919;
+        border-radius: 25px;
+    }
+
+    .clock {
+        height: 5em;
+        width: 5em;
+    }
+
+    #container-idea > div:nth-of-type(3) .clock {
+        height: 5em;
+        width: 5em;
+    }
+
+    .circle-container{
+        padding: 2px;
+    }
+
+    .circle{
+        height: 3px;
+        width: 3px;
+    }
     
 }
