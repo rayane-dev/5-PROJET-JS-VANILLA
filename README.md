@@ -35,6 +35,36 @@ Autres caractéristiques :
 - **CSS3** : Mise en forme et animation  
 - **JavaScript** : Logique de l’horloge et mise à jour dynamique de l’heure
 
+
+
+## 📜 Générateur de Citations en JavaScript
+
+Ce projet est un générateur de citations aléatoires, conçu avec HTML, CSS et JavaScript. Il permet d'afficher une citation inspirante à chaque chargement de page ou en cliquant sur un bouton dédié.
+
+### ✨ Fonctionnalités
+Affichage aléatoire de :
+
+- auteurs des citations
+
+- Nouveau message à chaque clic
+
+- Rafraîchissement fluide sans recharger la page
+
+- Design épuré et adaptatif
+
+### 🔧 Technologies utilisées
+
+- HTML5 : Structure sémantique du contenu
+
+- CSS3 : Style visuel, animations et responsive design
+
+- JavaScript : Génération aléatoire, gestion des événements et mise à jour dynamique des citations
+
+
+
+
+
+
   
 
 
