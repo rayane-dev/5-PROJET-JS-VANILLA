@@ -37,7 +37,7 @@ Autres caractéristiques :
 
 
 
-## 📜 Générateur de Citations en JavaScript
+## 📜 Générateur de Citations
 
 Ce projet est un générateur de citations aléatoires, conçu avec HTML, CSS et JavaScript. Il permet d'afficher une citation inspirante à chaque chargement de page ou en cliquant sur un bouton dédié.
 
