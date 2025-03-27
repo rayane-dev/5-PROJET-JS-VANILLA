@@ -49,66 +49,34 @@ const quiz = [
       reponses: ["54", "56", "64", "58"],
       bonneReponse: "56"
     }
-  ];
-  
+];
+
+
 
 //DOM
 let validate = document.querySelector('button')
-
 let question = document.querySelector('h2');
 let reponses = document.querySelectorAll('.reponse-case p');
 
 
-//GENERATION REPONSES
+
+for(let i; i < 10; i++){
+  console.log(i)
+
+//Generate random
 function generateAnswer(quiz){
-    let random = Math.floor(Math.random() * quiz.length)
+  let random = Math.floor(Math.random() * quiz.length)
 
-    question.innerHTML = quiz[random].question;
-    for(let i in quiz[random].reponses){
-        console.log(reponses[i].innerHTML = quiz[random].reponses[i])
-    }
-
-    return  random
-
+  // question.innerHTML = quiz[random].question;
+  // for(let i in quiz[random].reponses){
+  //     console.log(reponses[i].innerHTML = quiz[random].reponses[i])
+  // }
+  console.log(quiz[random])
+  return  random
 }
 
 
-
-
-
-
-
-let random = answers;
-let resultat = 0;
-
-
-// CAPTATION DU CLIC
-reponses.forEach(rep => {
-  rep.addEventListener('click', () => {
-    console.log('Tu as cliquer sur : ' + rep.textContent)
-
-    comparison(rep.textContent)
-  })
-})
-
-function comparison(reponses){
-
-    // comparaison reponse
-  if(quiz[random].bonneReponse == reponses){
-    resultat++;
-    console.log(resultat);
-    answers = generateAnswer(quiz);
-  }else{
-    console.log('Prochaine fois')
-  }
-
-}
-
-
-for(let i; i = 10; i++){
-
-
-
+ generateAnswer();
 
 
 
@@ -116,31 +84,3 @@ for(let i; i = 10; i++){
 
 
 }
-
-
-// validate.addEventListener('click', () =>  {
-//     generateAnswer(quiz);
-// })
-
-
-
-
-
-
-
-
-// if (reponses[i] == quiz[random].bonneReponse){
-//     console.log('Bonne reponse')
-// }
-
-
-
-
-
-
-
-
-
-
-
-
