@@ -59,28 +59,50 @@ let question = document.querySelector('h2');
 let reponses = document.querySelectorAll('.reponse-case p');
 
 
+let random;
 
-for(let i; i < 10; i++){
-  console.log(i)
+window.addEventListener("load", () => {
+    random = generateAnswer(quiz)
+    return random
+});
 
-//Generate random
+console.log(random)
+
+//GENERATION REPONSES
 function generateAnswer(quiz){
   let random = Math.floor(Math.random() * quiz.length)
 
-  // question.innerHTML = quiz[random].question;
-  // for(let i in quiz[random].reponses){
-  //     console.log(reponses[i].innerHTML = quiz[random].reponses[i])
-  // }
-  console.log(quiz[random])
+  question.innerHTML = quiz[random].question;
+  for(let i in quiz[random].reponses){
+      console.log(reponses[i].innerHTML = quiz[random].reponses[i])
+  }
+
   return  random
+
 }
 
 
- generateAnswer();
+// CAPTATION DU CLIC
+reponses.forEach(rep => {
+  rep.addEventListener('click', () => {
+    console.log('Tu as cliquer sur : ' + rep.textContent)
+    comparison(rep.textContent)
+  })
+})
 
 
+function comparison(rep){
 
-
-
+ 
+console.log(quiz[random].bonneReponse)
+console.log(rep)
+  
+if(quiz[random].bonneReponse == rep){
+  console.log('bravo')
+  random = generateAnswer(quiz)
+    return random
+}else{
+  console.log('Prochaine fois')
+}
 
 }
