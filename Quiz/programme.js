@@ -60,6 +60,8 @@ let reponses = document.querySelectorAll('.reponse-case p');
 
 
 let random;
+let i = 0 ;
+let resultat = 0;
 
 window.addEventListener("load", () => {
     random = generateAnswer(quiz)
@@ -86,23 +88,44 @@ function generateAnswer(quiz){
 reponses.forEach(rep => {
   rep.addEventListener('click', () => {
     console.log('Tu as cliquer sur : ' + rep.textContent)
-    comparison(rep.textContent)
+    i++
+    comparison(rep.textContent, i)
   })
 })
 
 
-function comparison(rep){
 
- 
-console.log(quiz[random].bonneReponse)
-console.log(rep)
+
+function comparison(rep, i){
   
-if(quiz[random].bonneReponse == rep){
-  console.log('bravo')
-  random = generateAnswer(quiz)
-    return random
-}else{
-  console.log('Prochaine fois')
-}
+  
+
+  if(rep  == quiz[random].bonneReponse){
+    if (i == 10){
+      sessionStorage.setItem("score", resultat);
+      console.log(localStorage);
+      window.location.href = './resultat.html';
+    }else{
+      quiz.splice(random, 1)
+      resultat++;
+      console.log('resultat : ' + resultat);
+      console.log(i)
+      random = generateAnswer(quiz)
+      return random, i;
+    }
+    
+  } else if (rep != quiz[random].bonneReponse){
+    if (i == 10){
+      sessionStorage.setItem("score", resultat);
+      window.location.href = './resultat.html';
+    }else{
+      quiz.splice(random, 1)
+      console.log('resultat : ' + resultat);
+      console.log(i)
+      random = generateAnswer(quiz)
+    }
+    return random, i;
+  }
 
 }
+
