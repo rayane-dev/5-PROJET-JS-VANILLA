@@ -62,10 +62,30 @@ Affichage aléatoire de :
 
 
 
+## 🕹️ Quiz
+
+Ce projet est un petit quiz interactif en JavaScript, permettant à l'utilisateur de tester ses connaissances de base en JavaScript. 
+
+
+### ✨ Fonctionnalités
+
+- Affichage d’une série de questions à choix multiple
+
+- Possibilité de sélectionner une réponse par question
+
+- Système de validation des réponses et score final
+
+
+### 🔧 Technologies utilisées
+
+- HTML5 : Structure des éléments du quiz (questions, options, score, etc.)
+
+- CSS3 : Mise en page responsive, couleurs interactives pour les réponses, animations de transition
+
+- JavaScript : Stockage des questions/réponses dans un tableau d’objets, logique de vérification des réponses et calcul du score, manipulation du DOM pour afficher dynamiquement les questions et les résultats, gestion des événements (clic sur les options, bouton "suivant", bouton "rejouer")
 
 
 
-  
 
 
 
