@@ -1,6 +1,27 @@
-let nbr = document.querySelectorAll('.number-operation');
+let display = document.querySelector('#display');
+let clear = document.querySelector('#clear')
 
-console.log( typeof nbr[1]);
+
+function appendDisplay(input){
+    display.value += input;
+    if(display.value.includes('=')){
+        console.log( display.value)
+        calcule(display)
+    }
+    
+}
+
+clear.addEventListener('click', () => {
+    display.value = '';
+})
 
 
-function 
+function calcule(){
+    try {
+        console.log(eval(display.value))
+        display.value = eval(display.value);
+        
+      } catch (error) {
+        display.value = 'errrrrr'
+      }
+}

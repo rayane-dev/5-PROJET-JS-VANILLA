@@ -7,40 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <div id="head-calculatrice">
-
-        </div>
-        <div id="column">
-            <div class="column">
-                <div class="sup-operation">AC</div>
-                <div class="number-operation">7</div>
-                <div class="number-operation">4</div>
-                <div class="number-operation">1</div>
-            </div>
-            <div class="column">
-                <div class="sup-operation">Nan</div>
-                <div class="number-operation">8</div>
-                <div class="number-operation">5</div>
-                <div class="number-operation">2</div>
-                <div class="number-operation">0</div>
-            </div>
-            <div class="column">
-                <div class="sup-operation">%</div>
-                <div class="number-operation">9</div>
-                <div class="number-operation">6</div>
-                <div class="number-operation">3</div>
-                <div class="virgule">,</div>
-            </div>
-            <div class="column">
-                <div class="button-operation">/</div>
-                <div class="button-operation">X</div>
-                <div class="button-operation">_</div>
-                <div class="button-operation">+</div>
-                <div class="button-operation">=</div>
-            </div>
+   
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button id="clear">C</button>
+            <button onclick="calcule()">=</button>
+            <button onclick="appendDisplay('+')">+</button>
+            <button onclick="appendDisplay('3')">3</button>
+            <button onclick="appendDisplay('2')">2</button>
+            <button onclick="appendDisplay('1')">1</button>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
