@@ -4,35 +4,34 @@ let list = document.querySelectorAll('.toDoContainer');
 
 // let p = document.createElement("p");
 
+//notification
+
+
 
 list.forEach((list) => {
     input.forEach((input) => {
         button.forEach((button) => {
+            console.log(button)
             button.addEventListener('click', () => {
+                let notification = document.createElement("div");
+                let check = document.createElement("input");
+                check.type = 'checkbox';
                 let p = document.createElement("p");
-                list.append(p);
-               console.log(input.value)
-               
-               p.innerHTML = input.value;
+                
+                list.append(notification)
+                notification.classList.add("notification");
+                notification.append(check); 
+                notification.append(p); 
+                p.innerHTML = input.value;
+                input.value = ''
+                if(todoText != ''){
+                    setData(todoText); // handler for adding item into local storage
+                    listTodo(); // handler for showing item from local storage
+                }
             })
         });
     });
 })
 
 
-// let input = document.querySelector('input');
-// let button = document.querySelector('button');
-// let carre = document.querySelectorAll('carre');
 
-
-
-// let p = document.createElement("p");
-
-
-
-// button.addEventListener('click', () => {
-//     carre.append(p);
-//     console.log(input.value)
-    
-//     p.innerHTML = input.value;
-// })
