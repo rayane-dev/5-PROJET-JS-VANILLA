@@ -86,6 +86,33 @@ Ce projet est un petit quiz interactif en JavaScript, permettant à l'utilisateu
 
 
 
+## 🧮 Calculatrice Interactive
+
+Ce projet est une calculatrice simple et interactive développée en JavaScript, permettant à l'utilisateur d'effectuer facilement des opérations mathématiques de base.
+
+### ✨ Fonctionnalités
+
+- Interface utilisateur claire pour réaliser les opérations mathématiques : addition, soustraction, multiplication et division.
+
+- Affichage en temps réel des entrées utilisateur et des résultats.
+
+- Bouton pour effacer les entrées ou réinitialiser complètement la calculatrice.
+
+### 🔧 Technologies utilisées
+
+- HTML5 : Structure des boutons numériques, des opérateurs mathématiques et de l’écran d’affichage des résultats.
+
+- CSS3 : Mise en forme responsive, design attrayant des boutons, animations discrètes pour une expérience utilisateur fluide.
+
+- JavaScript : Gestion des entrées utilisateur, exécution des calculs en temps réel, manipulation du DOM pour l’affichage dynamique des résultats, gestion des événements (clics sur les boutons numériques, opérateurs, effacer et égal).
+
+
+
+
+
+
+
+
 
 
 
