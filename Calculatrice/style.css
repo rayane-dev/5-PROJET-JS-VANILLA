@@ -4,24 +4,109 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'SF Pro Text Black';
+    src: url('fonts/SF-Pro-Text-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Bold';
+    src: url('fonts/SF-Pro-Text-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Heavy';
+    src: url('fonts/SF-Pro-Text-Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Light';
+    src: url('fonts/SF-Pro-Text-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Medium';
+    src: url('fonts/SF-Pro-Text-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Regular';
+    src: url('fonts/SF-Pro-Text-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Semibold';
+    src: url('fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text Thin';
+    src: url('fonts/SF-Pro-Text-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
+    height: 100svh;
+    width: 100svw;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: '300';
+    background-color: #191919;
     overflow: hidden;
 }
 
-#container{
+#calculator{
+    display: flex;
+    flex-direction: column;
     background-color: #191919;
-    width: 300px;
+    width: 357px;
+    padding-left: 29px;
+    padding-right: 29px;
 }
 
-#head-calculatrice{
-    height: 100px;
-}
-
-#column{
+input{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    padding: 11px;
+    padding-top: 150px;
+    font-size: 60px;
+    font-weight: 300;
+    height: 230px;
+    border: 0;
+    background-color: #191919;
+    color: #fff;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+#keys{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
     justify-content: space-between;
+    padding:  15px 0;
+    padding-bottom: 0;
 }
 
 .column{
@@ -30,20 +115,44 @@ body{
     gap: 10px;
 }
 
-.button-operation{
+button{
+    height: 66px;
+    width: 66px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    background-color: #353235;
+}
+
+.button-operation {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: orange;
-    padding: 20px;
+    height: 66px;
+    width: 66px;
     border-radius: 50px;
 }
 
-.number-operation, .virgule{
+.number-operation, .virgule {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: grey;
     padding: 20px;
     border-radius: 100px;
+}
+
+#bottom-button{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 11px;
+    padding-top: 11px;
+    padding-bottom: 20px;
+}
+
+#button-zero{
+    flex-grow: 1;
 }

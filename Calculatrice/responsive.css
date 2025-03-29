@@ -1,0 +1,7 @@
+@media screen and (max-width: 375px) {
+    #calculator{
+        width: 320px;
+        padding-left: 17px ;
+        padding-right: 17px ;
+    }
+}

@@ -5,18 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculatrice</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
 </head>
 <body>
    
     <div id="calculator">
         <input id="display" readonly>
         <div id="keys">
-            <button id="clear">C</button>
-            <button onclick="calcule()">=</button>
-            <button onclick="appendDisplay('+')">+</button>
-            <button onclick="appendDisplay('3')">3</button>
-            <button onclick="appendDisplay('2')">2</button>
-            <button onclick="appendDisplay('1')">1</button>
+            <div class="column">
+                <button id="clear">C</button>
+                <button onclick="appendDisplay('7')" >7</button>
+                <button onclick="appendDisplay('4')" >4</button>
+                <button onclick="appendDisplay('1')" >1</button>
+            </div>
+            <div class="column">
+                <button onclick="appendDisplay('8')" >8</button>
+                <button onclick="appendDisplay('5')" >5</button>
+                <button onclick="appendDisplay('2')" >2</button>
+            </div>
+            <div class="column">
+                <button onclick="appendDisplay('9')" >9</button>
+                <button onclick="appendDisplay('6')" >6</button>
+                <button onclick="appendDisplay('3')" >3</button>
+            </div>
+            <div class="column">
+                <button onclick="appendDisplay('%')" class="button-operation">%</button>
+                <button onclick="appendDisplay('*')" class="button-operation">*</button>
+                <button onclick="appendDisplay('-')" class="button-operation">-</button>
+                <button onclick="appendDisplay('+')" class="button-operation">+</button>
+                
+            </div>
+        </div>
+        <div id="bottom-button">
+            <button onclick="appendDisplay('0')" id="button-zero">0</button>
+            <button onclick="appendDisplay('.')" >.</button>
+            <button onclick="calcule()" class="button-operation">=</button>
         </div>
     </div>
 
