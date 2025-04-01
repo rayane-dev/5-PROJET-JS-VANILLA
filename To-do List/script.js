@@ -1,37 +1,70 @@
-let input = document.querySelectorAll('input');
-let button = document.querySelectorAll('button');
-let list = document.querySelectorAll('.toDoContainer');
-
-// let p = document.createElement("p");
-
-//notification
 
 
+let input = document.querySelector('input');
+let submit = document.querySelector('#submit');
+let wrapper = document.querySelector('#container-alert');
 
-list.forEach((list) => {
-    input.forEach((input) => {
-        button.forEach((button) => {
-            console.log(button)
-            button.addEventListener('click', () => {
-                let notification = document.createElement("div");
-                let check = document.createElement("input");
-                check.type = 'checkbox';
-                let p = document.createElement("p");
-                
-                list.append(notification)
-                notification.classList.add("notification");
-                notification.append(check); 
-                notification.append(p); 
-                p.innerHTML = input.value;
-                input.value = ''
-                if(todoText != ''){
-                    setData(todoText); // handler for adding item into local storage
-                    listTodo(); // handler for showing item from local storage
-                }
-            })
-        });
-    });
+
+let tasks = ['dssds', 'dssd'];
+
+// Pour récupérer
+let storedTasks = localStorage.getItem('mytodo');
+let tasksArray = storedTasks ? storedTasks.split(';') : []
+
+tasks = tasksArray;
+
+
+
+submit.addEventListener('click', () => {
+    console.log(input.value)
+    if(input.value != ''){
+        tasks.push(input.value)
+        console.log(tasks)
+        createElement(input.value)
+        localStorage.setItem('mytodo', tasks.join(';'));
+        console.log(tasks.join(';'))
+        input.value = '';
+    }
 })
+
+// Pour enregistrer
+
+
+
+
+
+
+
+
+tasks.forEach((task) => {
+    createElement(task);
+})
+
+//Creation de notif
+function createElement(task){
+    let notification = document.createElement("div");
+    notification.classList.add("notification");
+    notification.classList.add("alert");
+    notification.classList.add("alert-light");
+    wrapper.append(notification)
+    notification.innerHTML = task;
+    
+    // button supprimer
+    let suppr = document.createElement("button");
+    suppr.classList.add("btn");
+    suppr.classList.add("btn-danger");
+    suppr.innerHTML = 'Supprimer'
+    notification.append(suppr)
+
+    suppr.addEventListener('click', () => {
+        let index = tasks.indexOf(task);
+        tasks.splice(index, 1);
+        notification.remove()
+        console.log(tasks)
+        localStorage.setItem('mytodo', tasks.join(';'));
+    })
+}
+
 
 
 
