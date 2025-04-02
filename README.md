@@ -108,6 +108,34 @@ Ce projet est une calculatrice simple et interactive développée en JavaScript,
 
 
 
+## ✅ To-Do List Interactive
+
+Ce projet est une application de gestion de tâches interactive développée en JavaScript. Elle permet aux utilisateurs d'ajouter, gérer et supprimer facilement leurs tâches quotidiennes avec une interface simple et intuitive.
+
+### ✨ Fonctionnalités
+
+- 🔹 Ajout rapide de tâches via un champ de saisie.
+- 🔹 Suppression individuelle des tâches.
+- 🔹 Sauvegarde automatique des tâches dans le navigateur (localStorage).
+
+
+### 🔧 Technologies utilisées
+
+
+- HTML5 :  Structure de l'application avec un champ d'entrée, une liste dynamique, et des boutons d'action.
+
+- CSS3 : Design responsive et moderne, différenciation visuelle des tâches terminées, animations fluides.
+
+- JavaScript :  Gestion des événements utilisateur, manipulation du DOM, logique d'ajout/suppression, stockage dans `localStorage`.
+
+
+
+## Bilan
+
+J’ai réalisé 5 projets en JavaScript Vanilla pour renforcer mes bases en développement web. Cela m’a permis de pratiquer les variables, fonctions, boucles, objets, la manipulation du DOM, ainsi que la gestion des événements et du localStorage.
+
+J’ai aussi appris à utiliser GitHub pour versionner et publier mon code. Désormais, je poursuis mon apprentissage en explorant des sujets plus avancés comme les expressions régulières, les classes, l’asynchrone, la consommation d’API et bien d’autres concepts clés du JavaScript moderne.
+
 
 
 
