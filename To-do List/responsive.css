@@ -1,0 +1,89 @@
+@media screen and (max-width: 992px) {
+    #container-input input{
+        width: 300px;
+    }
+    .notification{
+        font-size: 14px;
+        padding: 7px;
+        padding-left: 15px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #wrapper{
+        padding: 25px;
+        gap: 30px;
+    }
+    #container-input input{
+        width: 250px;
+        padding: 5px;
+        padding-left: 15px;
+        font-size: 10px;
+    }
+    #container-input input::placeholder {
+        font-size: 14px;
+    }
+    .notification{
+        font-size: 14px;
+        padding: 7px;
+        padding-left: 15px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+    #wrapper{
+        gap: 20px;
+        font-size: 12px;
+    }
+    #container-input{
+        gap: 10px;
+    }
+    #container-input input{
+        width: 200px;
+        font-size: 10px;
+        border: 1px #ffffff3b solid;
+    }
+    .notification{
+        font-size: 14px;
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #wrapper{
+        gap: 20px;
+        font-size: 12px;
+        padding: 15px;
+        padding-top: 20px;
+    }
+    #container-input{
+        gap: 10px;
+        
+    }
+    #container-input input{
+        width: 200px;
+        font-size: 10px;
+    }
+    .notification{
+        font-size: 14px;
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .notification{
+        border: 1px solid #ffffff18;
+    }
+    .btn{
+        font-size: 12px;
+    }
+}

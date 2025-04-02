@@ -21,8 +21,9 @@ body{
     background-color: #ffffff0f;
     border: 2px #ffffff18 solid;
     backdrop-filter: 50px;
-    min-height: 400px;
+    /* min-height: 400px; */
     padding: 40px;
+    padding-bottom: 30px;
     gap: 50px;
     border-radius: 7px;
     /* border: 2px solid #b5562d24; */
@@ -38,8 +39,8 @@ body{
     width: 500px;
     background-color: #00000020;
     background-color: #3B3B3D;
+    border: 2px #ffffff3b solid;
     color: #fff;
-    border: 0px;
     padding: 10px;
 }
 
